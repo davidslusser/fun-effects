@@ -4,23 +4,24 @@
     "description": "A collecction of css and javascript effects",
     "main": "dist/index.min.js",
     "scripts": {
-      "build": "npm run build-css && npm run build-js",
-      "build-css": "postcss src/css/scroller.css -o dist/css/scroller.min.css",
-      "build-js": "terser src/js/scroller.js -o dist/js/scroller.min.js",
-      "prebuild": "mkdir -p dist/css dist/js"
+        "build": "npm run build-css && npm run build-js",
+        "build-css": "postcss src/css/scroller.css -o dist/css/scroller.min.css",
+        "build-js": "terser src/js/scroller.js -o dist/js/scroller.min.js",
+        "prebuild": "mkdir -p dist/css dist/js"
     },
-    "dependencies": {},
-    "devDependencies": {},
+    "devDependencies": {
+        "postcss-cli": "^11.0.0",
+        "terser": "^5.31.1"
+    },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/davidslusser/fun-effects.git"
+        "type": "git",
+        "url": "git+https://github.com/davidslusser/fun-effects.git"
     },
     "keywords": [
-      "scroller",
-      "css",
-      "javascript"
+        "scroller",
+        "css",
+        "javascript"
     ],
     "author": "David Slusser",
     "license": "GNU GENERAL PUBLIC LICENSE Version 3"
-  }
-  
+}
