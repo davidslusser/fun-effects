@@ -23,5 +23,10 @@
         "javascript"
     ],
     "author": "David Slusser",
-    "license": "GNU GENERAL PUBLIC LICENSE Version 3"
+    "license": "GNU GENERAL PUBLIC LICENSE Version 3",
+    "files": [
+      "dist/",
+      "README.md",
+      "LICENSE"
+    ]
 }
