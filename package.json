@@ -1,10 +1,10 @@
 {
-    "name": "my-main-project",
-    "version": "1.0.0",
-    "description": "A project using my-package",
+    "name": "fun-effects",
+    "version": "0.0.1",
+    "description": "A collecction of css and javascript effects",
     "main": "index.js",
     "dependencies": {
-      "my-package": "https://github.com/your-username/my-package.git"
+      "my-package": "https://github.com/davidslusser/fun-effects.git"
     },
     "scripts": {
       "start": "node index.js"
