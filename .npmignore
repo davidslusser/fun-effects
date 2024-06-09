@@ -1,1 +1,7 @@
+# Ignore source files
 src/
+
+# Include only the necessary files
+!dist/
+!README.md
+!LICENSE
