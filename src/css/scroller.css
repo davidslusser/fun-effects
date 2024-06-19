@@ -55,8 +55,8 @@ Color variables
 .scroller-nav {
     text-align: left;
     font-size: rem;
-    padding-left: 3rem;
-    padding-left: 3rem;
+    /* padding-left: 3rem;
+    padding-left: 3rem; */
 }
 .scroller-nav li {
     margin-right: 1rem;
@@ -100,11 +100,15 @@ Color variables
     }
 }
 
+a {
+    text-decoration: none !important;
+}
 
 .card {
     width: 250px;
     height: 125px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -114,4 +118,27 @@ Color variables
     color: var(--light, rgb(255, 255, 255));
     margin: .75rem;
     font-weight: bold;
+}
+
+/* Main content styles */
+.card-title {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: var(--light, rgb(255, 255, 255));
+}
+
+/* Subtitle styles */
+.card-subtitle {
+    font-size: 14px;
+    color: var(--light, rgba(255, 255, 255, 0.5));
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+/* Subtitle styles */
+.card-secondary {
+    font-size: 10px;
+    color: var(--light, rgba(255, 255, 255, 0.55));
+    margin-top: 8px;
+    font-weight: normal;
 }
