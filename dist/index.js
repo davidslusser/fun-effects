@@ -1,11 +1,11 @@
 // Importing CSS files
-import './src/css/background_icons.css';
-import './src/css/blur_group.css';
-import './src/css/fades.css';
-import './src/css/scroller.css';
+import './dist/css/background_icons.css';
+import './dist/css/blur_group.css';
+import './dist/css/fades.css';
+import './dist/css/scroller.css';
 
 // Import all scripts into a single object
-import allScripts from './src/js'; 
+import allScripts from './dist/js'; 
 
 // Log a message
 console.log('Fun effects loaded!');
