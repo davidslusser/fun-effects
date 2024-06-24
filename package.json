@@ -25,9 +25,14 @@
     "author": "David Slusser",
     "license": "GNU GENERAL PUBLIC LICENSE Version 3",
     "files": [
-      "dist/",
-      "src/",
-      "README.md",
-      "LICENSE"
-    ]
+        "dist/",
+        "src/",
+        "README.md",
+        "LICENSE"
+    ],
+    "dependencies": {
+        "clean-css": "^5.3.3",
+        "minify": "^11.2.1",
+        "uglify-js": "^3.18.0"
+    }
 }
