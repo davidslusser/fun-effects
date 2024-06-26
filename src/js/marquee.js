@@ -1,5 +1,4 @@
 function addAnimationDelay() {
-// test  
   const wrappers = document.querySelectorAll('.marquee-wrapper');
   wrappers.forEach(wrapper => {
     const elements = Array.from(wrapper.children);
@@ -14,11 +13,6 @@ function addAnimationDelay() {
     });
   });
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  addAnimationDelay();
-});
 
 
 function setRightProperty() {
@@ -36,10 +30,6 @@ function setRightProperty() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setRightProperty();
-});
-
 
 function setLeftProperty() {
   const wrappers = document.querySelectorAll('.marquee-wrapper');
@@ -56,13 +46,8 @@ function setLeftProperty() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setLeftProperty();
-});
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Select all marquee-wrapper elements
+function addMarqueeMouseListener() {
   const marqueeWrappers = document.querySelectorAll('.marquee-wrapper');
 
   marqueeWrappers.forEach(wrapper => {
@@ -85,4 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  addAnimationDelay();
+  setRightProperty();
+  setLeftProperty();
+  addMarqueeMouseListener();
 });
