@@ -2,6 +2,7 @@
 import './dist/css/background_icons.min.css';
 import './dist/css/blur_group.min.css';
 import './dist/css/fades.min.css';
+import './dist/css/marquee.min.css';
 import './dist/css/scroller.min.css';
 
 // Import all scripts into a single object

@@ -10,6 +10,7 @@
         "prebuild": "mkdir -p dist/css dist/js"
     },
     "devDependencies": {
+        "eslint": "^9.5.0",
         "postcss-cli": "^11.0.0",
         "terser": "^5.31.1"
     },

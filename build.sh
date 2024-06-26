@@ -57,7 +57,7 @@ for file in "$JS_SRC_DIR"/*.js; do
         # Extract the filename without the directory and extension
         filename=$(basename "$file" .js)
         # Run the minify command and save the output to the dist/js directory
-        minify "$file" > "$JS_DIST_DIR/$filename.min.js"
+        uglifyjs "$file" -o "$JS_DIST_DIR/$filename.min.js"
         echo "Minified $file to $JS_DIST_DIR/$filename.min.js"
     else
         echo "No .js files found in $JS_SRC_DIR"
