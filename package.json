@@ -1,6 +1,6 @@
 {
     "name": "fun-effects",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A collecction of css and javascript effects",
     "main": "dist/index.min.js",
     "scripts": {
