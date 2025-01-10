@@ -18,7 +18,6 @@ function getRandomPosition(existingPositions, iconSize) {
     });
   } while (overlap);
 
-  console.log(randomX, randomY);
   return { x: randomX, y: randomY };
 }
 
@@ -89,7 +88,14 @@ function createRandomIcons(numIcons) {
   document.body.appendChild(iconsContainer);
 }
 
+// Function to detect mobile devices
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
 // Create random icons
 document.addEventListener("DOMContentLoaded", () => {
-  createRandomIcons(20);
+  if (!isMobile()) {
+    createRandomIcons(20);
+  }
 });
